@@ -15,7 +15,7 @@ info:
   # Author name
   author: xyazzrany
   # Site URL
-  url: https://xyazzrany.github.io
+  url: https://xyazz.eu.org
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -129,10 +129,10 @@ home_banner:
   title: xyazzrany's blog
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ['Loading...'] # subtitle text, array
     hitokoto:  # 一言配置
-      enable: false # Whether to enable hitokoto
-      show_author: false # Whether to show author
+      enable: true # Whether to enable hitokoto
+      show_author: true # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
@@ -211,6 +211,10 @@ navbar:
       submenus:
         Me: /about
         Github: https://github.com/xyazzrany
+    # 说说: 
+    #    path: /essays
+    #    icon: fa-regular fa-book
+
     # Links: 
     #   icon: fa-regular fa-link
     #   submenus:
@@ -238,15 +242,18 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      归档: 
-        path: /archives 
-        icon: fa-regular fa-archive # can be empty
+      # 归档: 
+      #   path: /archives 
+      #   icon: fa-regular fa-archive # can be empty
       标签: 
         path: /tags 
         icon: fa-regular fa-tags # can be empty
       分类: 
         path: /categories 
         icon: fa-regular fa-folder # can be empty
+      说说: 
+        path: /essays
+        icon: fa-regular fa-book
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -387,13 +394,13 @@ footer:
   # Show website running time
   runtime: true # show website running time or not
   # Icon in footer, write fontawesome icon code here
-  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+  icon: '<i class="fa-thin fa-paper-plane" style="--fa-animation-duration: 0.5s; color: #00ccff"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
   start: 2024/12/10 00:00:00
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize:
+  customize: 每个人都有属于自己的一片森林，也许我们 从来不曾去过，但它一直在那里，总会在那里。迷失的人迷失了，相逢的人会再相逢。
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
@@ -426,23 +433,21 @@ plugins:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # Whether to enable
-    type: fixed # fixed, mini
+    enable: true # Whether to enable
+    type: fixed # fixed, 
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
-        lrc: # audio cover lrc
-#      - name: # audio name
-#        artist: # audio artist
-#        url: # audio url
-#        cover: # audio cover url
-#        lrc: # audio cover lrc
+      - name: One More Time, One More Chance # audio name
+        artist: Uru # audio artist
+        url: mp3/One_more_time,_One_more_chance-Uru-Remember.m4a # audio url
+        cover: mp3/test.jpg # audio cover url
+      - name: 会魔法的老人 # audio name
+        artist: 法老&KKECHO # audio artist
+        url: mp3/会魔法的老人-法老 KKECHO-健将mixtape.mp3 # audio url
+        cover: mp3/会魔法的老人.jpg # audio cover url
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
-    enable: false # enable mermaid or not
+    enable: true # enable mermaid or not
     version: "11.4.1" # default v11.4.1
 # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 

@@ -2,6 +2,7 @@
 title: 关于我
 date: 2024-12-11 02:06:24
 template: about
+comment: true
 ---
 XyAzZrany
 一个社畜，技术宅，懒人。
