@@ -360,31 +360,6 @@ comment:
       recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
       turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
       reaction: false # Waline reaction. See https://waline.js.org/reference/client/props.html#reaction
-    # Gitalk comment system. See https://github.com/gitalk/gitalk
-    gitalk:
-      clientID: # GitHub Application Client ID
-      clientSecret: # GitHub Application Client Secret
-      repo: # GitHub repository
-      owner: # GitHub repository owner
-      proxy: # GitHub repository proxy
-    # Twikoo comment system. See https://twikoo.js.org/
-    twikoo:
-      version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
-      server_url: # Twikoo server URL. e.g. https://example.example.com
-      region: # Twikoo region. can be empty
-    # Giscus comment system. See https://giscus.app/
-    giscus:
-      repo: xyazzrany/xyazzrany.github.io # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-      repo_id: R_kgDONbpURA # Github repository id
-      category: Announcements # Github discussion category
-      category_id: DIC_kwDONbpURM4ClIZA # Github discussion category id
-      mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
-      strict: 0 # Whether to enable strict mode. e.g. 0, 1
-      reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
-      emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-      lang: zh-CN # Giscus language. e.g. en, zh-CN, zh-TW
-      input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
-      loading: lazy # Load the comments lazily
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -436,14 +411,15 @@ plugins:
     enable: true # Whether to enable
     type: fixed # fixed, 
     audios:
-      - name: One More Time, One More Chance # audio name
-        artist: Uru # audio artist
-        url: mp3/One_more_time,_One_more_chance-Uru-Remember.m4a # audio url
-        cover: mp3/test.jpg # audio cover url
       - name: 会魔法的老人 # audio name
         artist: 法老&KKECHO # audio artist
         url: mp3/会魔法的老人-法老 KKECHO-健将mixtape.mp3 # audio url
         cover: mp3/会魔法的老人.jpg # audio cover url
+      - name: One More Time, One More Chance # audio name
+        artist: Uru # audio artist
+        url: mp3/One_more_time,_One_more_chance-Uru-Remember.m4a # audio url
+        cover: mp3/test.jpg # audio cover url
+
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
