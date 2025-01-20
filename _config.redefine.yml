@@ -408,7 +408,7 @@ plugins:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: true # Whether to enable
+    enable: false # Whether to enable
     type: fixed # fixed, 
     audios:
       - name: 会魔法的老人 # audio name
@@ -440,16 +440,16 @@ page_templates:
 
 # CDN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/cdn
-cdn:
-  # Whether to enable CDN
-  enable: true
-  # CDN Provider
-  provider: npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom
-  # Custom CDN URL
-  # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
-  # The ${path} must leads to the root of the "source" folder of the theme
-  custom_url: 
-# CDN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+# cdn:
+#   # Whether to enable CDN
+#   enable: false
+#   # CDN Provider
+#   provider: npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom
+#   # Custom CDN URL
+#   # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
+#   # The ${path} must leads to the root of the "source" folder of the theme
+#   custom_url: 
+# # CDN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # DEVELOPER MODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/developer
